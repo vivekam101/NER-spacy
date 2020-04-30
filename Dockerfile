@@ -5,4 +5,4 @@ WORKDIR /app
 COPY src/ .
 RUN mkdir /app/model /app/logs
 COPY model/ /app/model
-CMD ["gunicorn","--bind","0.0.0.0:7000","wsgi","--timeout=100"]
+CMD ["python","wsgi.py"]
