@@ -1,0 +1,5 @@
+flask_cors
+flask
+spacy==2.2.3
+numpy 
+pandas
