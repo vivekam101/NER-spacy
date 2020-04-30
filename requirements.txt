@@ -3,3 +3,4 @@ flask
 spacy==2.2.3
 numpy 
 pandas
+gunicorn==19.10.0
