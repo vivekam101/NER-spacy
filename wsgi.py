@@ -3,10 +3,11 @@ import time
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import spacy
-
+from config.default import APP_CONFIG
 
 application = Flask(__name__)
 cors = CORS(application)
+
 
 @application.route('/api/predict', methods=['POST'])
 def contract_predict():
@@ -41,4 +42,4 @@ def contract_predict():
 
 if __name__ == '__main__':
     nlp = spacy.load('en_core_web_sm')
-    application.run(debug=True, threaded=True, host='0.0.0.0', port=7005)
+    application.run(debug=True, threaded=True, host=APP_CONFIG.ce_host, port=APP_CONFIG.ce_port)
