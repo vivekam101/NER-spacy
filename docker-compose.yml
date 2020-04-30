@@ -6,9 +6,9 @@ services:
     ports:
       - '7000:7000'
     environment:
-      - CE_PREDICT_SKILL_HOST=0.0.0.0
-      - CE_PREDICT_SKILL_PORT=7000
-      - CE_PREDICT_SKILL_LOG_PATH=/app/logs
-      - CE_PREDICT_SKILL_LOG_LEVEL=INFO
-      - CE_PREDICT_SKILL_MODEL_PATH=/app/model
+      - CE_PREDICT_HOST=0.0.0.0
+      - CE_PREDICT_PORT=7000
+      - CE_PREDICT_LOG_PATH=/app/logs
+      - CE_PREDICT_LOG_LEVEL=INFO
+      - CE_PREDICT_MODEL_PATH=/app/model
     restart: unless-stopped
