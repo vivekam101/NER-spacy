@@ -4,5 +4,4 @@ RUN pip3 install -r requirements.txt
 WORKDIR /app
 COPY src/ .
 RUN mkdir /app/model /app/logs
-COPY model/ /app/model
 CMD ["python","wsgi.py"]
