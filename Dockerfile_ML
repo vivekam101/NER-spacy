@@ -1,2 +1,2 @@
 FROM busybox
-COPY /model/* /model
+COPY /model/* /model/
