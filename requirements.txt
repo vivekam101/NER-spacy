@@ -1,6 +1,5 @@
-flask_cors
-flask
+Flask==1.1.2
+Flask-Cors==3.0.8
 spacy==2.2.3
-numpy 
-pandas
-gunicorn==19.10.0
+numpy==1.18.3
+pandas==1.0.3
